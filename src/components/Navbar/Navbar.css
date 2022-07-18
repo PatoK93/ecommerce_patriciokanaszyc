@@ -1,4 +1,8 @@
 .Navbar {
     display: flex;
-    background-color: blue;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: xx-large;
 }
