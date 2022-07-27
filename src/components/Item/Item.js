@@ -8,16 +8,16 @@ function Item({ product }) {
       <Card.Img variant="top" src={product.img} />
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
-        <Card.Text> {product.description} </Card.Text>
+        {/* <Card.Text> {product.description} </Card.Text> */}
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item> {product.category} </ListGroup.Item>
+        {/* <ListGroup.Item> {product.category} </ListGroup.Item>
         <ListGroup.Item> Precio: {product.price} </ListGroup.Item>
-        <ListGroup.Item> Stock: {product.stock} </ListGroup.Item>
+        <ListGroup.Item> Stock: {product.stock} </ListGroup.Item> */}
       </ListGroup>
-      <Card.Body>
+      {/* <Card.Body>
         <ItemCount stock={product.stock} />
-      </Card.Body>
+      </Card.Body> */}
     </Card>
   );
 }
