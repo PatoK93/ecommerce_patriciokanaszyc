@@ -3,7 +3,7 @@ const products = [
     id: "1",
     name: "A",
     price: 500,
-    category: "Categoría A",
+    category: "categoriaA",
     img: "images/imagenGenerica.jpg",
     stock: 10,
     description: "Descripcion de A",
@@ -12,7 +12,7 @@ const products = [
     id: "2",
     name: "B",
     price: 1000,
-    category: "Categoría A",
+    category: "categoriaB",
     img: "images/imagenGenerica.jpg",
     stock: 15,
     description: "Descripcion de B",
@@ -21,7 +21,7 @@ const products = [
     id: "3",
     name: "C",
     price: 1500,
-    category: "Categoría A",
+    category: "categoriaC",
     img: "images/imagenGenerica.jpg",
     stock: 20,
     description: "Descripcion de C",
@@ -32,6 +32,22 @@ export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products);
+    }, 2000);
+  });
+};
+
+export const getProductById = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find((prod) => prod.id === id));
+    }, 2000);
+  });
+};
+
+export const getProductsByCategory = (categoryId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.filter((prod) => prod.category === categoryId));
     }, 2000);
   });
 };
