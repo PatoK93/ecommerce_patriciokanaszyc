@@ -1,16 +1,22 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import ItemCount from "../ItemCount/ItemCount";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 import "../ItemList/ItemList.css";
 
 const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
   const [quantity, setQuantity] = useState(0);
 
+  const { addItem, getProductQuantity } = useContext(CartContext);
+
+  const quantityAdded = getProductQuantity(id);
+
   const handleOnAdd = (quantity) => {
     console.log("agregue al carrito: ", quantity);
     setQuantity(quantity);
+    addItem({ id, name, price, quantity });
   };
 
   return (
@@ -30,7 +36,11 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
           {quantity > 0 ? (
             <Link to="/cart">Ir al carrito</Link>
           ) : (
-            <ItemCount stock={stock} onConfirm={handleOnAdd} />
+            <ItemCount
+              stock={stock}
+              onConfirm={handleOnAdd}
+              initial={quantityAdded}
+            />
           )}
         </Card.Body>
       </Card>
