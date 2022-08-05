@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "./ItemCount.css";
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ stock, onConfirm }) => {
   //variables iniciales
   const valorInicial = 1;
 
@@ -13,10 +13,6 @@ const ItemCount = ({ stock }) => {
   //funciones
   const agregarProducto = (num) => {
     setCantidad(cantidad + num);
-  };
-
-  const agregarAlCarrito = (cantidad) => {
-    alert(`Agregaste ${cantidad} productos`);
   };
 
   return (
@@ -44,7 +40,7 @@ const ItemCount = ({ stock }) => {
         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
           <Button
             variant="primary"
-            onClick={() => agregarAlCarrito(cantidad)}
+            onClick={() => onConfirm(cantidad)}
             disabled={stock === 0 ? true : null}
             className="botonBloque"
           >

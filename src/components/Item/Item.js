@@ -2,16 +2,16 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Link } from "react-router-dom";
 
-function Item({ product }) {
+function Item({ id, name, img, price }) {
   return (
-    <Card style={{ width: "18rem" }} key={product.id}>
-      <Card.Img variant="top" src={product.img} />
+    <Card style={{ width: "18rem" }} key={id}>
+      <Card.Img variant="top" src={img} />
       <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
+        <Card.Title>{name}</Card.Title>
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          <Link to={`/detail/${product.id}`} className="Option">
+          <Link to={`/detail/${id}`} className="Option">
             Ver detalle
           </Link>
         </ListGroup.Item>
