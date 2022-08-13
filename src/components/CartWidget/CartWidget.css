@@ -6,3 +6,7 @@
     font-size: 30px;
     height: 20px;
 }
+
+.cartDeshabilitado{
+    display: none;
+}

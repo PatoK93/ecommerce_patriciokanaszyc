@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Link } from "react-router-dom";
+import "./Item.css";
 
 function Item({ id, name, img, price }) {
   return (
@@ -11,7 +12,7 @@ function Item({ id, name, img, price }) {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          <Link to={`/detail/${id}`} className="Option">
+          <Link to={`/detail/${id}`} className="Option sinSubrayado">
             Ver detalle
           </Link>
         </ListGroup.Item>

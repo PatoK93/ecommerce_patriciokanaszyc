@@ -34,7 +34,9 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
         </ListGroup>
         <Card.Body>
           {quantity > 0 ? (
-            <Link to="/cart">Ir al carrito</Link>
+            <Link to="/cart" className="sinSubrayado">
+              Ir al carrito
+            </Link>
           ) : (
             <ItemCount
               stock={stock}

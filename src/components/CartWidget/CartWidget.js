@@ -10,10 +10,16 @@ const CartWidget = () => {
 
   return (
     <div className="cart">
-      <Link to="/cart">
-        <img src="/images/cart.svg" alt="cart" />
-      </Link>
-      <p className="contadorCart">{quantity}</p>
+      {quantity !== 0 ? (
+        <>
+          <Link to="/cart">
+            <img src="/images/cart.svg" alt="cart" />
+          </Link>
+          <p className="contadorCart">{quantity}</p>
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

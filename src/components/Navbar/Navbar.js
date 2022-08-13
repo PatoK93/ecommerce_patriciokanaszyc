@@ -10,23 +10,25 @@ function NavbarPropia() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>
-          <Link to="/">ECOMMERCE PAK</Link>
+          <Link to="/" className="sinSubrayado">
+            ECOMMERCE PAK
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <Link to="/category/categoriaA" className="Option">
+              <Link to="/category/categoriaA" className="Option sinSubrayado">
                 Categoría A
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/category/categoriaB" className="Option">
+              <Link to="/category/categoriaB" className="Option sinSubrayado">
                 Categoría B
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/category/categoriaC" className="Option">
+              <Link to="/category/categoriaC" className="Option sinSubrayado">
                 Categoría C
               </Link>
             </Nav.Link>

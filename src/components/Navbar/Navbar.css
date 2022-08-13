@@ -6,3 +6,7 @@
 .titulo{
     font-size: xx-large;
 }
+
+.sinSubrayado{
+    text-decoration: none;
+}
