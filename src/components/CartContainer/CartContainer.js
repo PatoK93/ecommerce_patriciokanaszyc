@@ -34,7 +34,11 @@ const CartContainer = () => {
         <Button variant="danger" onClick={() => clearCart()}>
           Limpiar Carrito
         </Button>
-        <Button variant="success">Comprar</Button>
+        <Button variant="primary">
+          <Link to="/checkout" className="Option textoBlanco sinSubrayado">
+            Checkout
+          </Link>
+        </Button>
       </div>
     </div>
   );
