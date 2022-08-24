@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+**Bienvenidos al Ecommerce de PAK**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**_Pasos para ejecutar el proyecto_**
 
-## Available Scripts
+1- Descargar/clonar el repositorio de [Github](https://github.com/)
+2- Asegurarse de tener instalado [NodeJs](https://nodejs.org/en/) en la PC.
+3- Desde la carpeta del proyecto correr el comando
 
-In the project directory, you can run:
+```sh
+npm install
+```
 
-### `npm start`
+4- Instalar la libreria react-router-dom (quizás esto ya se solventa con el paso anterior).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+npm install react-router-dom
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5- Crear las variables de entorno propias para poder utilizar el proyecto ([FireBase](https://firebase.google.com/?hl=es), etc.).
+6- El proyecto ya está listo para compilarse y ejectuarse con el comando
 
-### `npm test`
+```sh
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**_Objetivos y enfoque del proyecto_**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Lograr una aplicación web simple (ecommerce) con React Js.
+- El alcance del proyecto incluye una SPA reactiva, la cual va a permitir al usuario navegar entres las categorías de los productos ofrecidos (estas mismas son estáticas).
+- Además, se podrá ver el detalle de cada producto, lo cual funciona mediante el ruteo de los id de los mismos.
+- Por otro lado, se podrá agregar al carrito los productos que se requieran según disponibilidad de stock, lo cual es modificable en cualquier momento.
+- Luego, se puede pasar a finalizar la compra a través del carrito, el cual permite no solo modificar, sino eliminar productos (o todo), que se necesiten para ajustar la compra.
+- Como último paso, se solicitarán los datos básicos para generar la orden de compra y exponer el número de la misma.

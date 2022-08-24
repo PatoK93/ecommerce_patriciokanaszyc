@@ -18,18 +18,18 @@ function NavbarPropia() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <Link to="/category/categoriaA" className="Option sinSubrayado">
-                Categoría A
+              <Link to="/category/celulares" className="Option sinSubrayado">
+                Celulares
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/category/categoriaB" className="Option sinSubrayado">
-                Categoría B
+              <Link to="/category/notebooks" className="Option sinSubrayado">
+                Notebooks
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/category/categoriaC" className="Option sinSubrayado">
-                Categoría C
+              <Link to="/category/tablets" className="Option sinSubrayado">
+                Tablets
               </Link>
             </Nav.Link>
           </Nav>

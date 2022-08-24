@@ -11,7 +11,11 @@ const CartItem = ({ product }) => {
   };
   return (
     <Card style={{ width: "18rem" }} key={product.id}>
-      <Card.Img variant="top" src={product.img} />
+      <Card.Img
+        variant="top"
+        src={product.img}
+        style={{ width: "18rem", height: "18rem" }}
+      />
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
       </Card.Body>
