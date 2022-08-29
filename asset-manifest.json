@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ecommerce_patriciokanaszyc/static/css/main.425380ec.css",
+    "main.js": "/ecommerce_patriciokanaszyc/static/js/main.59fc9041.js",
+    "static/js/787.a0c66bd0.chunk.js": "/ecommerce_patriciokanaszyc/static/js/787.a0c66bd0.chunk.js",
+    "index.html": "/ecommerce_patriciokanaszyc/index.html",
+    "main.425380ec.css.map": "/ecommerce_patriciokanaszyc/static/css/main.425380ec.css.map",
+    "main.59fc9041.js.map": "/ecommerce_patriciokanaszyc/static/js/main.59fc9041.js.map",
+    "787.a0c66bd0.chunk.js.map": "/ecommerce_patriciokanaszyc/static/js/787.a0c66bd0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.425380ec.css",
+    "static/js/main.59fc9041.js"
+  ]
+}
